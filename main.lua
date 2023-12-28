@@ -1,4 +1,4 @@
-require "game"
+require "src/game"
 
 WINDOW = {WIDTH = 1280, HEIGHT = 720}
 Game = Game:new()

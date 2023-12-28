@@ -40,7 +40,7 @@ function Player:new(playerType, initX, initY)
 	function obj:render()
 		love.graphics.setColor(love.math.colorFromBytes{obj.color.r, obj.color.g, obj.color.b, obj.color.a})
 		love.graphics.rectangle("fill", obj.X - (obj.width / 2) , obj.Y - (obj.height / 2), obj.width, obj.height)
-		if debug then -- If debug then draw collision boxes
+		if Game.debug then -- If debug then draw collision boxes
 			love.graphics.setColor(0, 1, 0)
 			love.graphics.rectangle('line', obj.X - (obj.width / 2), obj.Y - (obj.height / 2), obj.width, obj.height)
 		end

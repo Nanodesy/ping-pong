@@ -1,4 +1,4 @@
-local vector = require "vector"
+local vector = require "src/vector"
 
 local INITIAL_SPEED = 300
 
@@ -35,7 +35,7 @@ function Ball:new(initX, initY)
 	function obj:render()
 		love.graphics.setColor(love.math.colorFromBytes{obj.color.r, obj.color.g, obj.color.b, obj.color.a})
 		love.graphics.circle("fill", obj.X, obj.Y, obj.radius)
-		if debug then -- If debug then draw collision boxes
+		if Game.debug then -- If debug then draw collision boxes
 			love.graphics.setColor(0, 1, 0)
 			love.graphics.rectangle('line', obj.X - obj.radius, obj.Y - obj.radius, obj.radius * 2, obj.radius * 2)
 		end

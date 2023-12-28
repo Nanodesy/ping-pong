@@ -1,5 +1,5 @@
-require "player"
-require "ball"
+require "src/player"
+require "src/ball"
 
 GameState = {READY = 0, START = 1, PLAY = 2} 
 
